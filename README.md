@@ -28,7 +28,8 @@ The **Excel Analytics Platform** is a full-stack web application designed to upl
 📂 Project Structure
 
 Excel-Analytics-Platform/
-│── backend/        
+│── backend/
+
 │── frontend/       
 
 
@@ -36,13 +37,16 @@ Excel-Analytics-Platform/
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/Excel-Analytics-Platform.git
+git clone https://github.com/patelaayush11330/Excel-Analytics-Platform.git
+
 cd Excel-Analytics-Platform
 
 2. Backend Setup
 
 cd backend
+
 npm install
+
 npm start
 
 Server will run at `http://localhost:5000/` (default).
@@ -50,7 +54,9 @@ Server will run at `http://localhost:5000/` (default).
 3. Frontend Setup
 
 cd frontend
+
 npm install
+
 npm run dev
 
 
