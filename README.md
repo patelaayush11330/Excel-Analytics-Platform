@@ -2,6 +2,7 @@
 
 The **Excel Analytics Platform** is a full-stack web application designed to upload, analyze, and visualize Excel data interactively. It allows users to transform raw spreadsheets into meaningful insights with charts, dashboards, and custom analytics tools.
 
+
 🚀 Features
 
 * 📂 Upload Excel/CSV files and parse data
@@ -10,6 +11,7 @@ The **Excel Analytics Platform** is a full-stack web application designed to upl
 * 🛠️ Backend API for analytics and data processing
 * 🎨 Interactive and responsive UI built for smooth user experience
 * 💾 Export processed data and reports
+
 
 🏗️ Tech Stack
 
@@ -25,12 +27,14 @@ The **Excel Analytics Platform** is a full-stack web application designed to upl
 * RESTful APIs for analytics
 
 
+
 📂 Project Structure
 
-Excel-Analytics-Platform/
+Excel-Analytics-Platform
 │── backend/
 
 │── frontend/       
+
 
 
 ⚙️ Installation & Setup
@@ -41,6 +45,7 @@ git clone https://github.com/patelaayush11330/Excel-Analytics-Platform.git
 
 cd Excel-Analytics-Platform
 
+
 2. Backend Setup
 
 cd backend
@@ -49,7 +54,7 @@ npm install
 
 npm start
 
-Server will run at `http://localhost:5000/` (default).
+
 
 3. Frontend Setup
 
@@ -58,6 +63,7 @@ cd frontend
 npm install
 
 npm run dev
+
 
 
 🖥️ Usage
