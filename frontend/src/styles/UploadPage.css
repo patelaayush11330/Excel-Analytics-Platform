@@ -1,0 +1,140 @@
+.modal-content.page-version {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  background: #f8f9fe;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.4s ease;
+  flex-wrap: wrap;
+
+  /* ✅ Center and limit width */
+  max-width: 1100px;
+  margin: 60px auto;  /* Horizontal center + spacing from top */
+}
+
+.title-icon {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  animation: fadeIn 0.5s ease;
+}
+
+/* LEFT SIDE */
+.upload-left {
+  flex: 1;
+}
+
+.drop-zone {
+  border: 2px dashed #c0d3ff;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #eef4ff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.drop-zone:hover {
+  transform: scale(1.02);
+  border-color: #82aaff;
+}
+
+.drop-zone p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.drop-zone input[type="file"] {
+  margin-top: 12px;
+}
+
+.upload-btn {
+  background-color: #6aa5ff;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-btn:hover {
+  background-color: #4d90f0;
+  transform: scale(1.05);
+}
+
+.note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE */
+.upload-right {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #dde6ff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.upload-right h4 {
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #444;
+}
+
+.uploaded-files-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.uploaded-files-list li {
+  background-color: #f5f9ff;
+  border: 1px solid #d4e5ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+.uploaded-files-list li:hover {
+  background-color: #e7f1ff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .modal-content.page-version {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .upload-left,
+  .upload-right {
+    width: 100%;
+  }
+}

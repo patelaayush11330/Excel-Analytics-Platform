@@ -1,0 +1,136 @@
+.chart-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.chart-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-box {
+  margin-bottom: 15px;
+}
+
+.panel-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.panel-box select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.generate-btn,
+.download-btn,
+.close-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn {
+  background-color: #28a745;
+}
+
+.close-btn {
+  background-color: #dc3545;
+}
+
+.chart-preview {
+  flex: 1;
+  min-height: 500px;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-chart {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.chart-box {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  position: relative;
+}
+
+/* Close button: top-right corner */
+.modal-chart .close-btn {
+  position: absolute;
+  top: -650px;
+  right: 10px;
+  width: auto;
+  padding: 6px 12px;
+}
+
+/* Download button: bottom-left corner */
+.modal-chart .download-btn {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  width: auto;
+  padding: 10px 20px;
+}
+
+.ai-insights-box {
+  background: #f0f8ff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+.ai-insights-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.ai-insights-box li {
+  margin: 0.5rem 0;
+}
